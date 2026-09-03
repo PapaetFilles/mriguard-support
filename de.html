@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MRI Guard — Magnetfeld-Warnung nahe dem MRT</title>
+<meta name="description" content="MRI Guard schlägt laut Alarm, wenn das Magnetfeld um dein iPhone oder deine Apple Watch in Richtung Gefahrenzone steigt — von MR-Physiker Dr. David Grodzki. Ein Hilfsmittel zur Orientierung, kein zertifiziertes Sicherheitsgerät.">
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#12141a; --muted:#5b616e;
+    --line:#e6e8ec; --accent:#0a7cff; --warn:#b25e00; --warnbg:#fff5e6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0f1115; --card:#171a21; --ink:#eef1f6; --muted:#a2a9b6;
+           --line:#262b34; --accent:#4c9dff; --warn:#ffbf66; --warnbg:#2a2113; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  header{text-align:center;padding:24px 0 8px}
+  .logo{font-size:40px}
+  h1{font-size:2rem;margin:.3em 0 .1em}
+  .tag{color:var(--muted);font-size:1.1rem;margin:0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:20px 22px;margin:18px 0}
+  h2{font-size:1.25rem;margin:.2em 0 .5em}
+  ul{padding-left:1.1em;margin:.4em 0}
+  li{margin:.3em 0}
+  .muted{color:var(--muted)}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .warn{background:var(--warnbg);border:1px solid color-mix(in srgb,var(--warn) 40%,transparent);
+    color:var(--warn);border-radius:14px;padding:16px 18px;font-size:.95rem}
+  footer{text-align:center;color:var(--muted);font-size:.9rem;margin-top:28px}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;
+    padding:2px 10px;font-size:.8rem;color:var(--muted);margin:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🧲</div>
+    <h1>MRI Guard</h1>
+    <p class="tag">Schützt deine Geräte vorm MRT</p>
+    <p><span class="pill">iPhone</span><span class="pill">Apple Watch</span><span class="pill">10 Sprachen</span></p>
+  </header>
+
+  <div class="card">
+    <p>Dein iPhone und deine Apple Watch gehören zu deinen wichtigsten und teuersten
+    Begleitern — Fotos, Chats, Karten, ein halbes Leben. Und ausgerechnet an deinem
+    Arbeitsplatz wartet ihr gefährlichster Gegner: Der Magnet eines MRT ist niemals aus.
+    Ein Schritt zu viel, und das Feld kann dein Gerät löschen oder beschädigen — oder es
+    dir im Nu aus der Hand reißen. Wir alle wissen, dass man aufpassen muss — und
+    trotzdem passiert es: ein Notfall, Stress, ein Moment der Unachtsamkeit — und ein
+    Gerät, an dem so viel hängt, ist hinüber.</p>
+    <p>Gemacht für alle, die regelmäßig mit dem MRT zu tun haben: MTR/MTRA,
+    Radiolog*innen, weitere Ärzt*innen und Pflegekräfte in Klinik und Praxis,
+    Servicetechnik und Forschung — und auch Patient*innen mit dem Smartphone in der
+    Tasche.</p>
+    <p>Mit <strong>MRI Guard</strong> schützen sich deine Geräte selbst: Die App misst
+    das Magnetfeld ringsum und schlägt laut und unüberhörbar Alarm, wenn es in Richtung
+    Gefahrenzone steigt — dein Moment zum Innehalten, Prüfen und Zurücktreten.</p>
+  </div>
+
+  <div class="card">
+    <h2>Von einem MR-Physiker</h2>
+    <p>MRI Guard stammt von <strong>Dr. David Grodzki</strong> — MR-Physiker,
+    Erfinder zahlreicher MR-Patente und vielfach ausgezeichneter MR-Innovator,
+    unter anderem mit dem vom Bundespräsidenten überreichten <strong>Deutschen
+    Zukunftspreis</strong>. Die App
+    kommt von jemandem, der täglich mit diesen Magnetfeldern arbeitet — und der bewusst
+    vorsichtig damit ist, was die App verspricht: ein kluges Hilfsmittel zur Orientierung,
+    nie ein Ersatz für zugelassene MR-Sicherheitstechnik.</p>
+  </div>
+
+  <div class="card">
+    <h2>Was die App kann</h2>
+    <ul>
+      <li>Live-Magnetfeldanzeige mit klarer Farbskala (grün → rot)</li>
+      <li>Einstellbarer Alarm-Schwellwert — Standard an der 0,5-mT-/5-Gauss-Kontrollbereichsgrenze</li>
+      <li>Lauter Alarm und Vibration beim Überschreiten des Schwellwerts</li>
+      <li>Misst im Hintergrund weiter, auch bei gesperrtem Bildschirm</li>
+      <li>Optionaler Intelligenter Alarm gegen Fehlalarme durch Magneten am ruhenden Gerät</li>
+      <li>Einheiten: Mikrotesla (µT), Millitesla (mT) oder Gauss (G)</li>
+      <li>Automatischer Start oder Ankunfts-Erinnerung am gespeicherten Arbeitsplatz (iPhone), dazu Kurzbefehle und Siri</li>
+      <li>Pausiert von selbst, solange das Gerät lädt — induktive Ladegeräte erzeugen selbst starke Felder — und misst nach dem Abstöpseln sofort weiter</li>
+      <li>Warnt deutlich, wenn der iOS-Stromsparmodus aktiv ist, der die Hintergrundmessung verzögern kann</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>iPhone &amp; Apple Watch</h2>
+    <p>Das <strong>iPhone</strong> ist das Herz von MRI Guard — und der Ort, an dem die
+    App ihre volle Stärke ausspielt: Einmal gestartet, misst es auch in der Tasche weiter,
+    und bei der Ankunft am Arbeitsplatz startet es auf Wunsch von selbst.</p>
+    <p>Mit MRI Guard auf der <strong>Apple Watch</strong> trägst du den Wächter direkt am
+    Handgelenk: Die Watch misst selbst, alarmiert selbst und zeigt dir das Feld auf einen
+    Blick. Gestartet wird sie mit einem Tipp auf der Uhr (per Komplikation genau einem)
+    oder auf dem iPhone — oder auf Wunsch automatisch immer dann mit, wenn die Messung
+    auf dem iPhone startet. Alarme vom iPhone erscheinen zusätzlich am Handgelenk.
+    watchOS verlangt von dauerhaft messenden Apps ein paar Kompromisse — die App hält
+    sich auf der Uhr im Vordergrund, braucht etwas mehr Akku als auf dem iPhone, und auf die
+    Ankunft am Arbeitsplatz reagieren darf nur das iPhone. Wir nennen das ehrlich beim
+    Namen: Deshalb trägt die Watch-App ein Beta-Etikett.</p>
+  </div>
+
+  <div class="card">
+    <h2>Ankunft am Arbeitsplatz — gut zu wissen</h2>
+    <p>Speichere einmal deinen Arbeitsplatz, und <strong>Automatisch starten</strong>
+    schaltet die Überwachung bei der Ankunft freihändig scharf — eine Meldung bestätigt
+    es. Du entscheidest lieber selbst? Dann wähle die
+    <strong>Ankunfts-Erinnerung</strong>: ein Tipp auf die Mitteilung startet die Messung.
+    Beim Verlassen stoppt sie in beiden Fällen von selbst. Technisch steckt Apples Geofencing dahinter; für zuverlässige Erkennung:
+    Standortzugriff <strong>„Immer"</strong> mit <strong>genauem Standort</strong>
+    erlauben, <strong>WLAN eingeschaltet</strong> lassen (iOS erkennt Orte darüber, auch
+    ohne Verbindung) und den Stromsparmodus meiden. iOS meldet eine Ankunft typischerweise
+    ein bis drei Minuten nach Erreichen des Ortes — und das Öffnen der App startet die
+    Messung immer sofort. Für große Gebäude lässt sich der Erkennungsradius eines Ortes in
+    der App vergrößern.</p>
+  </div>
+
+  <div class="card">
+    <h2>Privat by Design</h2>
+    <p>Kein Konto. Keine Anmeldung. Gespeicherte Orte bleiben auf deinem Gerät und werden
+    nie hochgeladen. Die App kann anonyme, aggregierte Nutzungsstatistiken teilen, um
+    besser zu werden — in den Einstellungen jederzeit abschaltbar. Siehe
+    <a href="privacy.html">Datenschutzerklärung</a>.</p>
+  </div>
+
+  <div class="warn">
+    <strong>Bitte lesen.</strong> MRI Guard ist ein Hilfsmittel zur Orientierung —
+    <em>kein</em> zertifiziertes Sicherheitsgerät und kein Medizinprodukt. Der Magnetsensor
+    in Handy oder Uhr ist unkalibriert und sättigt bei wenigen Millitesla; er kann starke
+    Felder nicht genau messen und reagiert womöglich nicht in jeder Situation. Verlasse
+    dich bei sicherheitskritischen Entscheidungen niemals darauf. Befolge stets die
+    MR-Sicherheitsregeln deiner Einrichtung und nutze zugelassene Messtechnik. Für deine
+    Sicherheit und deine Geräte bist du selbst verantwortlich.
+  </div>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>Fragen, Feedback oder ein Problem? Schreib an
+    <a href="mailto:info@papaetfilles.com">info@papaetfilles.com</a>.</p>
+  </div>
+
+  <footer>
+    © 2026 Dr. David Grodzki · <a href="privacy.html">Datenschutz</a> · <a href="index.html">English</a>
+  </footer>
+</div>
+</body>
+</html>

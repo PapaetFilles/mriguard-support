@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MRI Guard — Magnetic field awareness near MRI</title>
+<meta name="description" content="MRI Guard sounds a loud alarm as the magnetic field around your iPhone or Apple Watch climbs toward the danger zone near an MRI scanner. An awareness aid — not a certified safety device.">
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#12141a; --muted:#5b616e;
+    --line:#e6e8ec; --accent:#0a7cff; --warn:#b25e00; --warnbg:#fff5e6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0f1115; --card:#171a21; --ink:#eef1f6; --muted:#a2a9b6;
+           --line:#262b34; --accent:#4c9dff; --warn:#ffbf66; --warnbg:#2a2113; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  header{text-align:center;padding:24px 0 8px}
+  .logo{font-size:40px}
+  h1{font-size:2rem;margin:.3em 0 .1em}
+  .tag{color:var(--muted);font-size:1.1rem;margin:0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:20px 22px;margin:18px 0}
+  h2{font-size:1.25rem;margin:.2em 0 .5em}
+  ul{padding-left:1.1em;margin:.4em 0}
+  li{margin:.3em 0}
+  .muted{color:var(--muted)}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .warn{background:var(--warnbg);border:1px solid color-mix(in srgb,var(--warn) 40%,transparent);
+    color:var(--warn);border-radius:14px;padding:16px 18px;font-size:.95rem}
+  footer{text-align:center;color:var(--muted);font-size:.9rem;margin-top:28px}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;
+    padding:2px 10px;font-size:.8rem;color:var(--muted);margin:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🧲</div>
+    <h1>MRI Guard</h1>
+    <p class="tag">Protect your devices from MRI</p>
+    <p><span class="pill">iPhone</span><span class="pill">Apple Watch</span><span class="pill">10 languages</span></p>
+  </header>
+
+  <div class="card">
+    <p>Your iPhone and Apple Watch are among your most important and most expensive
+    companions — photos, chats, cards, half your life. And of all places, their most
+    dangerous opponent waits at your workplace: an MRI scanner's magnet is never off.
+    One step too far, and the field can wipe or damage your device — or tear it from
+    your hand in an instant. We all know to be careful — and still it happens: an
+    emergency, stress, one moment of distraction — and a device that holds so much is
+    done for.</p>
+    <p>Made for everyone who regularly deals with MRI: radiographers and MRI
+    technologists, radiologists, other physicians and nurses in hospitals and practices,
+    service engineers and researchers — and patients with a smartphone in their
+    pocket.</p>
+    <p>With <strong>MRI Guard</strong>, your devices protect themselves: the app reads
+    the magnetic field around them and sounds a loud, unmistakable alarm as it climbs
+    toward the danger zone — your moment to stop, check, and step back.</p>
+  </div>
+
+  <div class="card">
+    <h2>Made by an MRI physicist</h2>
+    <p>MRI Guard is built by <strong>Dr. David Grodzki</strong> — MR physicist,
+    inventor of numerous MR patents, and multi-award-winning MR innovator,
+    including the <strong>German Future Award for Technology and Innovation</strong>
+    (Deutscher Zukunftspreis), presented by the German Federal President. It's built by
+    someone who works with these magnetic fields first-hand and is deliberately careful
+    about what the app claims: a smart awareness aid, never a replacement for approved MR
+    safety equipment.</p>
+  </div>
+
+  <div class="card">
+    <h2>What it does</h2>
+    <ul>
+      <li>Live magnetic-field reading with a clear colour scale (green → red)</li>
+      <li>Adjustable alarm threshold — default at the 0.5&nbsp;mT / 5-gauss controlled-area line</li>
+      <li>Loud alarm and vibration when the field crosses your threshold</li>
+      <li>Keeps monitoring in the background, even with the screen locked</li>
+      <li>Optional Smart Alarm to reduce false alarms from a magnet brought to a resting device</li>
+      <li>Units in microtesla (µT), millitesla (mT) or gauss (G)</li>
+      <li>Automatic start or arrival reminder at your saved workplace (iPhone), plus Shortcuts and Siri</li>
+      <li>Pauses itself while the device is charging — induction chargers create strong fields of their own — and resumes the moment you unplug</li>
+      <li>Warns you clearly when iOS Low Power Mode is on, which can delay background monitoring</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>iPhone &amp; Apple Watch</h2>
+    <p>The <strong>iPhone</strong> is the heart of MRI Guard — and where the app is at
+    its best: once started, it keeps measuring while it sits in your pocket, and it can
+    start by itself when you arrive at work.</p>
+    <p>With MRI Guard on the <strong>Apple Watch</strong>, you carry the guard right on
+    your wrist: the watch measures on its own, alarms on its own, and shows you the field
+    at a glance. Start it with a tap on the watch (exactly one with a watch-face
+    complication) or on your iPhone — or let it start along automatically whenever
+    monitoring starts on the iPhone. Alarms from the iPhone appear on your wrist as well.
+    watchOS demands a few compromises of continuously measuring apps — the app keeps
+    itself in the foreground of the watch, uses somewhat more battery than on the iPhone,
+    and only the iPhone may react to your arrival at work. We call that what it is:
+    that's why the watch app carries a Beta label.</p>
+  </div>
+
+  <div class="card">
+    <h2>Arriving at work — good to know</h2>
+    <p>Save your workplace once and <strong>automatic start</strong> arms monitoring
+    hands-free the moment you arrive — a notification confirms it. Prefer to decide
+    yourself? Switch to the <strong>arrival reminder</strong>, where one tap on the
+    notification starts monitoring instead. Either way it stops by itself when you
+    leave. This uses Apple's
+    geofencing; for reliable detection allow <strong>Always</strong> location access with
+    <strong>Precise Location</strong> on, keep <strong>Wi-Fi enabled</strong> (iOS uses it
+    to recognise places, even without a connection), and avoid Low Power Mode. iOS
+    typically reports an arrival one to three minutes after you reach a saved place — and
+    opening the app always starts monitoring right away. For large buildings you can
+    increase a place's detection radius in the app.</p>
+  </div>
+
+  <div class="card">
+    <h2>Private by design</h2>
+    <p>No account. No sign-in. Your saved locations stay on your device and are never
+    uploaded. The app can share anonymous, aggregate usage statistics to help improve it —
+    you can turn that off anytime in Settings. See our
+    <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <div class="warn">
+    <strong>Please read.</strong> MRI Guard is an awareness aid — <em>not</em> a certified
+    safety device or medical instrument. The magnetic sensor in a phone or watch is
+    uncalibrated and saturates at a few millitesla, so it cannot measure strong fields
+    accurately and may not react in every situation. Never rely on it for safety-critical
+    decisions. Always follow your site's MR safety rules and use approved measuring
+    equipment. You are responsible for your own safety and your devices.
+  </div>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>Questions, feedback, or a problem? Email
+    <a href="mailto:info@papaetfilles.com">info@papaetfilles.com</a>.</p>
+  </div>
+
+  <footer>
+    © 2026 Dr. David Grodzki · <a href="privacy.html">Privacy</a> · <a href="de.html">Deutsch</a>
+  </footer>
+</div>
+</body>
+</html>
