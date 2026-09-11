@@ -35,6 +35,12 @@
   footer{text-align:center;color:var(--muted);font-size:.9rem;margin-top:28px}
   .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;
     padding:2px 10px;font-size:.8rem;color:var(--muted);margin:2px}
+  .cta{text-align:center;margin:22px 0 4px}
+  .cta a{display:inline-block;line-height:0}
+  .cta img{height:54px;width:auto}
+  .offer{display:inline-block;margin:14px 0 0;padding:7px 16px;border-radius:999px;
+    background:var(--warnbg);border:1px solid color-mix(in srgb,var(--warn) 35%,transparent);
+    color:var(--warn);font-size:.92rem}
 </style>
 
 <!-- Link preview (WhatsApp, iMessage, Slack, social). These override the
@@ -64,6 +70,16 @@
     <p class="tag">Schützt deine Geräte vorm MRT</p>
     <p><span class="pill">iPhone</span><span class="pill">Apple Watch</span><span class="pill">10 Sprachen</span></p>
   </header>
+
+  <div class="cta">
+    <a href="https://apps.apple.com/de/app/mri-guard/id6794649750" aria-label="MRI Guard im App Store laden">
+      <picture>
+        <source srcset="appstore-badge-de-white.svg" media="(prefers-color-scheme: dark)">
+        <img src="appstore-badge-de-black.svg" alt="Laden im App Store" width="162" height="54">
+      </picture>
+    </a>
+    <p class="offer">Zum Start: die Vollversion zum Einführungspreis, für begrenzte Zeit.</p>
+  </div>
 
   <div class="card">
     <p>Dein iPhone und deine Apple Watch gehören zu deinen wichtigsten und teuersten
@@ -158,7 +174,7 @@
   </div>
 
   <footer>
-    © 2026 Dr. David Grodzki · <a href="privacy.html">Datenschutz</a> · <a href="index.html">English</a>
+    © 2026 Dr. David Grodzki · <a href="https://apps.apple.com/de/app/mri-guard/id6794649750">App Store</a> · <a href="privacy.html">Datenschutz</a> · <a href="index.html">English</a>
   </footer>
 </div>
 </body>
