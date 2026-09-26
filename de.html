@@ -41,6 +41,20 @@
   .offer{display:inline-block;margin:14px 0 0;padding:7px 16px;border-radius:999px;
     background:var(--warnbg);border:1px solid color-mix(in srgb,var(--warn) 35%,transparent);
     color:var(--warn);font-size:.92rem}
+  .android{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+  .android .badge{width:72px;height:72px;border-radius:18px;display:grid;place-items:center;
+    background:color-mix(in srgb,#3ddc84 16%,var(--card));border:1px solid color-mix(in srgb,#3ddc84 35%,var(--line))}
+  .android .eye{fill:var(--card)}
+  .android h2{margin-top:0}
+  .android p{margin:.5em 0}
+  .android p:first-of-type{margin-top:0}
+  .android-hint{margin:12px 0 0;font-size:.92rem}
+  .android-hint a{display:inline-flex;align-items:center;gap:6px;color:var(--muted)}
+  .android-hint a:hover{color:var(--accent)}
+  .android-hint svg{width:18px;height:18px}
+  .android-hint .eye{fill:var(--bg)}
+  .tm{font-size:.78rem;margin-top:8px}
+  @media (max-width:480px){.android{grid-template-columns:1fr}.android .badge{width:60px;height:60px}}
 </style>
 
 <!-- Link preview (WhatsApp, iMessage, Slack, social). These override the
@@ -79,6 +93,11 @@
       </picture>
     </a>
     <p class="offer">Zum Start: die Vollversion zum Einführungspreis, für begrenzte Zeit.</p>
+    <p class="android-hint"><a href="#android"><svg class="droid" viewBox="0 0 64 64" width="18" height="18" aria-hidden="true" focusable="false">
+        <path d="M19 28 12.5 17.5M45 28l6.5-10.5" stroke="#3ddc84" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M8 46a24 24 0 0 1 48 0z" fill="#3ddc84"/>
+        <circle cx="22" cy="36" r="3" class="eye"/><circle cx="42" cy="36" r="3" class="eye"/>
+      </svg><span>Gibt es MRI Guard für Android?</span></a></p>
   </div>
 
   <div class="card">
@@ -139,6 +158,23 @@
     Feierabend ist. Nutzt HealthKit; alles bleibt auf deinem Gerät. Vollversion.</p>
   </div>
 
+  <div class="card android" id="android">
+    <div class="badge">
+      <svg class="droid" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true" focusable="false">
+        <path d="M19 28 12.5 17.5M45 28l6.5-10.5" stroke="#3ddc84" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M8 46a24 24 0 0 1 48 0z" fill="#3ddc84"/>
+        <circle cx="22" cy="36" r="3" class="eye"/><circle cx="42" cy="36" r="3" class="eye"/>
+      </svg>
+    </div>
+    <div>
+      <h2>Android-Version</h2>
+        <p>Eine Android-Version steht auf unserer Roadmap, und eine erste technische Bewertung haben wir bereits abgeschlossen.</p>
+        <p>Android-Geräte unterscheiden sich stark in Hardware, Magnetsensoren und im Umgang mit Apps im Hintergrund. Ein zuverlässiger Alarm muss deshalb gründlich über viele Hersteller und Gerätemodelle hinweg getestet werden.</p>
+        <p>Zuverlässigkeit ist uns wichtig. Wir veröffentlichen keinen Alarm, der auf manchen Telefonen funktioniert und auf anderen unbemerkt versagen könnte. Deshalb nehmen wir uns die Zeit, die Android-Version sorgfältig zu prüfen, bevor wir sie anbieten.</p>
+        <p>Einen Termin können wir noch nicht nennen — aber Android steht fest auf unserer Roadmap.</p>
+    </div>
+  </div>
+
   <div class="card">
     <h2>Ankunft am Arbeitsplatz — gut zu wissen</h2>
     <p>Speichere einmal deinen Arbeitsplatz, und <strong>Automatisch starten</strong>
@@ -182,6 +218,7 @@
 
   <footer>
     © 2026 Dr. David Grodzki · <a href="https://apps.apple.com/de/app/mri-guard/id6794649750">App Store</a> · <a href="privacy.html">Datenschutz</a> · <a href="press/">Presse</a> · <a href="index.html">English</a>
+    <p class="tm">Android ist eine Marke von Google LLC. Der Android-Roboter wurde auf Grundlage einer von Google erstellten und geteilten Arbeit reproduziert oder verändert und wird gemäß den Bedingungen der Creative-Commons-Lizenz „Namensnennung 3.0“ verwendet.</p>
   </footer>
 </div>
 </body>

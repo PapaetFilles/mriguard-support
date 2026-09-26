@@ -41,6 +41,20 @@
   .offer{display:inline-block;margin:14px 0 0;padding:7px 16px;border-radius:999px;
     background:var(--warnbg);border:1px solid color-mix(in srgb,var(--warn) 35%,transparent);
     color:var(--warn);font-size:.92rem}
+  .android{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+  .android .badge{width:72px;height:72px;border-radius:18px;display:grid;place-items:center;
+    background:color-mix(in srgb,#3ddc84 16%,var(--card));border:1px solid color-mix(in srgb,#3ddc84 35%,var(--line))}
+  .android .eye{fill:var(--card)}
+  .android h2{margin-top:0}
+  .android p{margin:.5em 0}
+  .android p:first-of-type{margin-top:0}
+  .android-hint{margin:12px 0 0;font-size:.92rem}
+  .android-hint a{display:inline-flex;align-items:center;gap:6px;color:var(--muted)}
+  .android-hint a:hover{color:var(--accent)}
+  .android-hint svg{width:18px;height:18px}
+  .android-hint .eye{fill:var(--bg)}
+  .tm{font-size:.78rem;margin-top:8px}
+  @media (max-width:480px){.android{grid-template-columns:1fr}.android .badge{width:60px;height:60px}}
 </style>
 
 <!-- Link preview (WhatsApp, iMessage, Slack, social). These override the
@@ -79,6 +93,11 @@
       </picture>
     </a>
     <p class="offer">Launch offer: the full version at an introductory price, for a limited time.</p>
+    <p class="android-hint"><a href="#android"><svg class="droid" viewBox="0 0 64 64" width="18" height="18" aria-hidden="true" focusable="false">
+        <path d="M19 28 12.5 17.5M45 28l6.5-10.5" stroke="#3ddc84" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M8 46a24 24 0 0 1 48 0z" fill="#3ddc84"/>
+        <circle cx="22" cy="36" r="3" class="eye"/><circle cx="42" cy="36" r="3" class="eye"/>
+      </svg><span>Looking for Android?</span></a></p>
   </div>
 
   <div class="card">
@@ -139,6 +158,23 @@
     HealthKit; everything stays on your device. Full version.</p>
   </div>
 
+  <div class="card android" id="android">
+    <div class="badge">
+      <svg class="droid" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true" focusable="false">
+        <path d="M19 28 12.5 17.5M45 28l6.5-10.5" stroke="#3ddc84" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M8 46a24 24 0 0 1 48 0z" fill="#3ddc84"/>
+        <circle cx="22" cy="36" r="3" class="eye"/><circle cx="42" cy="36" r="3" class="eye"/>
+      </svg>
+    </div>
+    <div>
+      <h2>Android version</h2>
+        <p>An Android version is on our roadmap, and we’ve already completed an initial technical evaluation.</p>
+        <p>Because Android devices vary widely in their hardware, magnetic sensors, and background-app behavior, building a reliable safety alarm requires extensive testing across different manufacturers and device models.</p>
+        <p>Reliability is essential to us. We won’t release an alarm that works on some phones but could silently fail on others. That’s why we’re taking the time to properly validate the Android version before making it available.</p>
+        <p>We can’t share a release date yet, but Android is firmly on our roadmap.</p>
+    </div>
+  </div>
+
   <div class="card">
     <h2>Arriving at work — good to know</h2>
     <p>Save your workplace once and <strong>automatic start</strong> arms monitoring
@@ -181,6 +217,7 @@
 
   <footer>
     © 2026 Dr. David Grodzki · <a href="https://apps.apple.com/app/id6794649750">App Store</a> · <a href="privacy.html">Privacy</a> · <a href="press/">Press</a> · <a href="de.html">Deutsch</a>
+    <p class="tm">Android is a trademark of Google LLC. The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.</p>
   </footer>
 </div>
 </body>
