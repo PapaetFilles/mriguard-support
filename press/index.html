@@ -47,6 +47,14 @@
   .btn{display:inline-block;padding:9px 16px;border-radius:999px;background:var(--accent);color:#fff;font-weight:600}
   .btn:hover{text-decoration:none;opacity:.92}
   code{font-size:.9em}
+  .android{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+  .android .badge{width:72px;height:72px;border-radius:18px;display:grid;place-items:center;
+    background:color-mix(in srgb,#3ddc84 16%,var(--card));border:1px solid color-mix(in srgb,#3ddc84 35%,var(--line))}
+  .android .eye{fill:var(--card)}
+  .android h2{margin-top:0}
+  .android p{margin:.5em 0}
+  .tm{font-size:.78rem;margin-top:8px}
+  @media (max-width:480px){.android{grid-template-columns:1fr}.android .badge{width:60px;height:60px}}
 </style>
 </head>
 <body>
@@ -94,7 +102,7 @@
     <dl class="facts">
       <dt>Name</dt><dd>MRI Guard</dd>
       <dt>Platforms</dt><dd>iPhone (iOS 17+), Apple Watch (watchOS 10+)</dd>
-      <dt>Android</dt><dd>On the roadmap; initial technical evaluation completed. No release date yet — reliability has to be verified across manufacturers and models first. <a href="../#android">More</a></dd>
+      <dt>Android</dt><dd>On the roadmap; initial technical evaluation completed. No release date yet — reliability has to be verified across manufacturers and models first. <a href="#android">Statement below</a></dd>
       <dt>Current version</dt><dd>1.1, released 15 September 2026 (1.0: 12 September 2026)</dd>
       <dt>Price</dt><dd>Free: live reading, gauge, chart. Full version (alarm, automations, Apple Watch, Shortcuts): one-time purchase, no subscription. Introductory price until 12 November 2026.</dd>
       <dt>Languages</dt><dd>English, German, French, Spanish, Italian, Portuguese (Brazil), Chinese (Simplified), Korean, Japanese, Arabic</dd>
@@ -106,6 +114,23 @@
       <dt>Developer</dt><dd>Dr. David Grodzki, Germany · <a href="mailto:info@papaetfilles.com">info@papaetfilles.com</a></dd>
       <dt>Links</dt><dd><a href="https://apps.apple.com/app/id6794649750">App Store</a> · <a href="../">Product page (EN)</a> · <a href="../de.html">Produktseite (DE)</a></dd>
     </dl>
+  </div>
+
+  <div class="card android" id="android">
+    <div class="badge">
+      <svg viewBox="0 0 64 64" width="44" height="44" aria-hidden="true" focusable="false">
+        <path d="M19 28 12.5 17.5M45 28l6.5-10.5" stroke="#3ddc84" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M8 46a24 24 0 0 1 48 0z" fill="#3ddc84"/>
+        <circle cx="22" cy="36" r="3" class="eye"/><circle cx="42" cy="36" r="3" class="eye"/>
+      </svg>
+    </div>
+    <div>
+      <h2>Android version</h2>
+      <p>An Android version is on our roadmap, and we’ve already completed an initial technical evaluation.</p>
+      <p>Because Android devices vary widely in their hardware, magnetic sensors, and background-app behavior, building a reliable safety alarm requires extensive testing across different manufacturers and device models.</p>
+      <p>Reliability is essential to us. We won’t release an alarm that works on some phones but could silently fail on others. That’s why we’re taking the time to properly validate the Android version before making it available.</p>
+      <p>We can’t share a release date yet, but Android is firmly on our roadmap.</p>
+    </div>
   </div>
 
   <div class="card">
@@ -158,6 +183,7 @@
 
   <footer>
     © 2026 Dr. David Grodzki · <a href="https://apps.apple.com/app/id6794649750">App Store</a> · <a href="../privacy.html">Privacy</a> · <a href="../">Product page</a>
+    <p class="tm">Android is a trademark of Google LLC. The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.</p>
   </footer>
 </div>
 </body>
